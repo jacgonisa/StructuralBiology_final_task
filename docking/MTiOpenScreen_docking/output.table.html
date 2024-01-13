@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/portal/css/mobyle.css" type="text/css"/>
+    <link rel="stylesheet" href="/portal/css/jquery.dataTables.css" type="text/css"/>
+    <script type="text/javascript" src="/portal/js/jquery.js"></script>
+    <script type="text/javascript" src="/portal/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#ligands_table').dataTable( {
+            "order": [ [2,"asc"] ],
+            "lengthMenu": [ [100, 250, 500, -1], [100, 250, 500, "All"] ]
+        } );
+    } );
+    </script>
+    <title>Tabulated ligands</title>
+</head>
+<body>
+<table id="ligands_table"  class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            
+            <th>Compound</th>
+            
+            <th>Model ID</th>
+            
+            <th>Energy</th>
+            
+            <th>nRot
+</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            
+            <td>CHEMBL505121</td>
+            
+            <td>1</td>
+            
+            <td>-7.8</td>
+            
+            <td>28
+</td>
+            
+        </tr>
+        
+        <tr>
+            
+            <td>CHEMBL1161857</td>
+            
+            <td>1</td>
+            
+            <td>-7.6</td>
+            
+            <td>27
+</td>
+            
+        </tr>
+        
+        <tr>
+            
+            <td>CHEMBL1794644_positive</td>
+            
+            <td>1</td>
+            
+            <td>-6.8</td>
+            
+            <td>WARNING:
+</td>
+            
+        </tr>
+        
+        <tr>
+            
+            <td>CHEMBL1949897</td>
+            
+            <td>1</td>
+            
+            <td>-6.6</td>
+            
+            <td>28
+</td>
+            
+        </tr>
+        
+        <tr>
+            
+            <td>CHEMBL149701_negative</td>
+            
+            <td>1</td>
+            
+            <td>-5.9</td>
+            
+            <td>14
+</td>
+            
+        </tr>
+        
+    </tbody>
+</table>
+</body>
+</html>
